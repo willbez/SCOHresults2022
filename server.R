@@ -1,14 +1,12 @@
-library(sf)
-library(rvest)
-library(stringr)
-library(tidyr)
-library(shiny)
-library(leaflet)
 library(DT)
+library(leaflet)
 library(leafpop)
+library(sf)
+library(shiny)
+library(tidyr)
 
-overall.df <- read.csv("data/overall.df.csv")
 election.df <- read.csv("data/election.df.csv")
+overall.df <- read.csv("data/overall.df.csv")
 
 colnames(election.df)[colnames(election.df) == "precName"] <- "Precinct"
 
